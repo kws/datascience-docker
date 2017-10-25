@@ -9,13 +9,13 @@ port exposed:
 
 
 ```
-docker run -p8888:8888 -it kajws/datascience-docker
+docker run -p8888:8888 -it kajws/datascience-jupyter
 ```
 
 Now, since the 'sample' directories are protected, you probably want to mount a volume
 to save your own work in. 
 
 ```
-docker run -p8888:8888 -it -rm -v<mylocaldir>:/opt/notebooks/mywork kajws/datascience-docker
+docker run -p8888:8888 -it -rm -v<mylocaldir>:/opt/notebooks/mywork kajws/datascience-jupyter
 ```
 
